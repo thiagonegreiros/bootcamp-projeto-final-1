@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net"
+    agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+    version="27.1.6">
+    <diagram name="MVC API Architecture" id="znjwhOYsp0i3MBNLXu55">
+        <mxGraphModel dx="977" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1"
+            arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0"
+            shadow="0">
+            <root>
+                <mxCell id="0" />
+                <mxCell id="1" parent="0" />
+                <mxCell id="SJ6qm_Xbz4yrYyM0LD9N-43" value="Controller&#xa;(customerController.js)"
+                    style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;"
+                    vertex="1" parent="1">
+                    <mxGeometry x="60" y="180" width="160" height="50" as="geometry" />
+                </mxCell>
+                <mxCell id="SJ6qm_Xbz4yrYyM0LD9N-44" value="Service&#xa;(customerService.js)"
+                    style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+                    vertex="1" parent="1">
+                    <mxGeometry x="260" y="180" width="160" height="50" as="geometry" />
+                </mxCell>
+                <mxCell id="SJ6qm_Xbz4yrYyM0LD9N-45" value="Repository&#xa;(customerRepository.js)"
+                    style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;"
+                    vertex="1" parent="1">
+                    <mxGeometry x="460" y="180" width="160" height="50" as="geometry" />
+                </mxCell>
+                <mxCell id="SJ6qm_Xbz4yrYyM0LD9N-47" value="Entity&#xa;(customer.js)"
+                    style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;"
+                    vertex="1" parent="1">
+                    <mxGeometry x="630" y="300" width="140" height="50" as="geometry" />
+                </mxCell>
+                <mxCell id="SJ6qm_Xbz4yrYyM0LD9N-48" style="endArrow=block;html=1;" edge="1"
+                    parent="1" source="SJ6qm_Xbz4yrYyM0LD9N-43" target="SJ6qm_Xbz4yrYyM0LD9N-44">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="SJ6qm_Xbz4yrYyM0LD9N-49" style="endArrow=block;html=1;" edge="1"
+                    parent="1" source="SJ6qm_Xbz4yrYyM0LD9N-44" target="SJ6qm_Xbz4yrYyM0LD9N-45">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="SJ6qm_Xbz4yrYyM0LD9N-50"
+                    style="endArrow=block;html=1;entryX=0;entryY=0.516;entryDx=0;entryDy=0;entryPerimeter=0;"
+                    edge="1" parent="1" source="SJ6qm_Xbz4yrYyM0LD9N-45"
+                    target="SJ6qm_Xbz4yrYyM0LD9N-52">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="201.25" as="targetPoint" />
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="SJ6qm_Xbz4yrYyM0LD9N-51" style="endArrow=block;html=1;dashed=1;"
+                    edge="1" parent="1" target="SJ6qm_Xbz4yrYyM0LD9N-47">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="700" y="230" as="sourcePoint" />
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="SJ6qm_Xbz4yrYyM0LD9N-52" value="Database&lt;br&gt;(SQLite)"
+                    style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=light-dark(#FFFFFF,#392F3F);"
+                    vertex="1" parent="1">
+                    <mxGeometry x="670" y="160" width="60" height="80" as="geometry" />
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

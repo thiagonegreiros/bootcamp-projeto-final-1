@@ -11,13 +11,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // API Routes
-app.post('/customers', customerController.create.bind(customerController));
-app.get('/customers', customerController.getAll.bind(customerController));
-app.get('/customers/count', customerController.count.bind(customerController));
-app.get('/customers/name/:name', customerController.getByName.bind(customerController));
-app.get('/customers/:id', customerController.getById.bind(customerController));
-app.put('/customers/:id', customerController.update.bind(customerController));
-app.delete('/customers/:id', customerController.delete.bind(customerController));
+// Path base: /v1/customer
+app.post('/v1/customer', customerController.create.bind(customerController));
+app.get('/v1/customer', customerController.getAll.bind(customerController));
+app.get('/v1/customer/count', customerController.count.bind(customerController));
+app.get('/v1/customer/name/:name', customerController.getByName.bind(customerController));
+app.get('/v1/customer/:id', customerController.getById.bind(customerController));
+app.put('/v1/customer/:id', customerController.update.bind(customerController));
+app.delete('/v1/customer/:id', customerController.delete.bind(customerController));
 
 // Health check route
 app.get('/', (req, res) => {
